@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); </style>
+</head>
+<body id="body">
+    <h3>Ingrese su nombre</h3>
+    <input type="text" name="name" id="name" >
+
+    <div>
+        <h3>Ingrese la primera de 1 a 5</h3>
+        <input class="numeros" type="number" name="nota1" id="nota1" min="1" max="5" > 
+    </div>
+    <div>
+        <h3>Ingrese la segunda de 1 a 5</h3>
+        <input class="numeros" type="number" name="nota2" id="nota2" min="1" max="5">
+    </div>
+    <br>
+    
+
+    <p id="result"><b>resultado</b></p>
+    <br>
+    <button onclick="finalscore()"  id="boton"><b>Aceptar</b></button>
+
+    
+
+    <input class="colores" type="color" name="fondo" id="fondo" onchange="changecolor(this)">
+
+    <script src="app.js"></script>
+</body>
+</html> 
